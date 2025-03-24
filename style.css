@@ -85,8 +85,7 @@ ul {
     width: 100px;
 }
 .hero-link:hover {
-    background-color: #EDBDAC;
-    border: 2px solid #EDBDAC;
+    background-color: hsla(16, 64%, 80%, 0.2);
 }
 
 /* Info Section */
@@ -145,6 +144,15 @@ ul {
 .about-link {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.avatar {
+    width:200px;
+    border-radius: 25%;
+    float: left;
+    padding: 15px;
+}
+.about-section:hover {
+    background-color: hsla(16, 64%, 80%, 0.2);
 }
 
 /* Sign Up Form */
