@@ -17,24 +17,27 @@
                 <p class="logo-text">Shiloh BreAnn</p>
             </div>
             <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="https://docs.google.com/document/d/1kJUPDjpbsGC9xBI8peQL-GRP34RPNqII/edit?usp=drive_link&ouid=103775933707707015415&rtpof=true&sd=true" target="_blank">Resume</a></li>
+                <li><a class="nav-link" href="#aboutSection">About</a></li>
+                <li><a class="nav-link" href="#formSection">Contact</a></li>
                 <li><a class="nav-link" href="#">Projects</a></li>
+                <li><a class="nav-link" href="https://www.shecodes.io/graduates/104306-shiloh-huntsberry">SheCodes</a></li>
             </ul>
         </nav>
         
         <!-- Main content -->
+        <div class="cursor"></div>
         <main>
+            
             <!-- Hero section -->
             <section class="hero-section">
                 <video width="300" height="240" autoplay loop class="hero-image">
                     <source src="cursor.mp4" type="video/mp4">
                     <source src="cursor.mp4" type="video/ogg">
-                  Your browser does not support the video tag.
+                  
                   </video>
                 <div>
-                    <h1 class="hero-heading">Junior <span>Front-End Developer</span></h1>
+                    <h1 class="hero-heading">Junior <span>Front-End Developer</span> </h1>
                     <p class="hero-text">Curiousity inspires creation!</p>
                     <a class="hero-link" href="#">See Projects</a>
                 </div>
@@ -62,30 +65,39 @@
             </section>
         
             <!-- About section -->
-            <section class="about-section">
+            <section class="about-section" id="aboutSection">
                 <div class="about">
-                    <h2 class="about-heading">About Me</h2>
+                    <h2 class="about-heading">About Me</h2><strong></strong>
                     <img class="avatar" src="avatar.jpg" />
-                    <p class="about-text">Hi, I'm Shiloh Huntsberry! I'm a passionate front-end developer, with a focus on building beautiful, user-friendly websites. Over the past few years, I've been honing my skills through various online resources and have experience in HTML, CSS, JavaScript, and Python. Along with my technical skills, I bring strong time management, organizational, leadership, and training abilities to the table.
-
+                    <p class="about-text">Hi, I'm Shiloh Huntsberry! I'm a passionate front-end developer, with a focus on building beautiful, user-friendly websites. Over the past few years, I've been honing my skills through various online resources and have experience in HTML, CSS, JavaScript, and Python. Along with my technical skills, I bring strong <strong>time management</strong>, <strong>organizational</strong>, <strong>leadership</strong>, and <strong>training</strong> abilities to the table.
+                        <br/>
                         When I'm not coding, you can find me reading or tending to my garden—two hobbies that help me recharge and stay creative. "I’m passionate about ensuring everyone has access to information and I deeply respect the internet's role in bringing us all together.
-                        
-                        A fun fact about me: I’m a huge coffee lover—so much so that one winter, when I slipped on ice, my immediate reaction was to save my coffee, not myself!"
-                        
+                                                
                     </p>
+                    <p><em>A fun fact about me: I’m a huge coffee lover—so much so that one winter, when I slipped on ice, my immediate reaction was to save my coffee, not myself!</em></p>
+                    <a href="https://docs.google.com/document/d/1kJUPDjpbsGC9xBI8peQL-GRP34RPNqII/edit?usp=drive_link&ouid=103775933707707015415&rtpof=true&sd=true" download="SHresume.docx" class="resume-download">Check out my resume</a>
                 </div>
             </section>
         
             <!-- Form section -->
-            <section class="form-section">
-                <form>
-                    <h2 class="form-heading">Let's stay in touch</h2>
-                    <p class="form-intro">.</p>
-                    <label for="name">Full name</label>
-                    <input class="input" id="name" type="text" placeholder="Ariana Regular" />
-                    <label for="email">Email</label>
-                    <input class="input" id="email" type="email" placeholder="ariana.regular@gmail.com" />
-                    <button class="submit-button" type="button" onclick="submitForm()"></button>
+            <section class="form-section" id="formSection">
+                <h2 class="form-heading">Let’s connect!</h2>
+                    <p class="form-intro">Whether you have a cool project in mind or just want to talk tech (or coffee ☕), I’d love to chat.</p>
+                    
+                <form 
+                action="https://formspree.io/f/mzzgavwa"
+                method="POST">
+                    <label>
+                        Your email:
+                        <input type="email" name="email" class="input" id="name" placeholder="Email" required>
+                    </label>
+                    <label>
+                    Your message:
+                    <textarea name="message"class="input" id="email" placeholder="Your message here..." required></textarea>
+                    </label>
+                    
+                  
+                    <button class="submit-button" type="submit" >Send Message!</button>
                 </form>
             </section>
             
@@ -94,26 +106,24 @@
         <!-- Footer -->
         <footer class="footer">
             <ul class="social-links">
-                <li><a class="social-link" href="#">
+                <li><a class="social-link" href="https://github.com/HuntsberryS">
                     <ion-icon class="icon" name="logo-github"></ion-icon>
                     <p>Github</p>
                 </a><li>
-                <li><a class="social-link" href="#">
+                <li><a class="social-link" href="https://www.instagram.com/shilohbreann/">
                     <ion-icon class="icon" name="logo-instagram"></ion-icon>
                     <p>Instagram</p>
                 </a><li>
-                <li><a class="social-link" href="#">
+                <li><a class="social-link" href="www.linkedin.com/in/shiloh-huntsberry-12b045367">
                     <ion-icon class="icon" name="logo-linkedin"></ion-icon>
                     <p>LinkedIn</p>
                 </a><li>
-                <li><a class="social-link" href="#">
-                    <ion-icon class="icon" name="book-outline"></ion-icon>
-                    <p>RedNote</p>
-                </a><li>
+                
             </ul>
+            <p class="copyright">© 2025 Shiloh Huntsberry</p>
         </footer>
         
-        <script src="index.pack.js"></script>
+        <script src="index.js"></script>
         <!-- The two scripts below import the icons we use in our footer -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
