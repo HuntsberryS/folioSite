@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="cursor"></div>
         <!-- Navigation bar -->
         <nav class="navbar">
             <div class="logo">
@@ -26,9 +27,9 @@
         </nav>
         
         <!-- Main content -->
-        <div class="cursor"></div>
+        
+
         <main>
-            
             <!-- Hero section -->
             <section class="hero-section">
                 <video width="300" height="240" autoplay loop class="hero-image">
@@ -44,25 +45,56 @@
             </section>
     
             <!-- Info section -->
-            <section class="info-section">
-                <div class="info">
-                    <h1 class="info-heading">Skills and Languages</h1>
-                </div>
-                <ul class="statistics">
-                    <li class="stat">
-                        <h4 class="stat-heading">HTML/CSS</h4>
-                        <p class="stat-number">***</p>
-                    </li>
-                    <li class="stat">
-                        <h4 class="stat-heading">JavaScript</h4>
-                        <p class="stat-number">***</p>
-                    </li>
-                    <li class="stat">
-                        <h4 class="stat-heading">Python</h4>
-                        <p class="stat-number">***</p>
-                    </li>
-                </ul>
-            </section>
+             
+                <section id="skills">
+  <h2 class="section-title">Skills & Tools</h2>
+
+  <div class="skills-grid">
+
+    <!-- Languages -->
+    <div class="skill-card language">
+      <h3>Languages</h3>
+      <ul>
+        <li>HTML/CSS <span class="level proficient">Proficient</span></li>
+        <li>JavaScript <span class="level intermediate">Proficient</span></li>
+        <li>Python <span class="level intermediate">Proficient</span></li>
+      </ul>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-card tools">
+      <h3>Tools & Frameworks</h3>
+      <ul>
+        <li>VS Code</li>
+        <li>Git & GitHub</li>
+        <li>Netlify</li>
+        <li>Bootstrap</li>
+        <li>React <span class="level learning">Learning</span></li>
+      </ul>
+    </div>
+
+    <!-- Design -->
+    <div class="skill-card design">
+      <h3>Design & UI</h3>
+      <ul>
+        <li>Responsive Layouts</li>
+        <li>Accessibility Basics</li>
+        <li>Figma <span class="level beginner">Beginner</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="learning-section">
+    <h3>Currently Learning</h3>
+    <div class="badges">
+      <span class="badge">React</span>
+      <span class="badge">APIs</span>
+      <span class="badge">Git Branching</span>
+    </div>
+  </div>
+</section>
+                   
+          
         
             <!-- About section -->
             <section class="about-section" id="aboutSection">
@@ -85,19 +117,24 @@
                     <p class="form-intro">Whether you have a cool project in mind or just want to talk tech (or coffee ☕), I’d love to chat.</p>
                     
                 <form 
-                action="https://formspree.io/f/mzzgavwa"
-                method="POST">
-                    <label>
+                action="https://formsubmit.co/6a38cb49767d7c2ca1762facc2674321" method="POST" id="contactForm">
+                <!--honeypot-->
+                <input type="text" name="_honey" style="display: none">
+                <!--remove captcha-->
+                <input type="hidden" name="_captcha" value="false">
+                <label>
                         Your email:
-                        <input type="email" name="email" class="input" id="name" placeholder="Email" required>
+                        <input type="email" name="email" class="input" id="emailAddress" placeholder="Email" required>
                     </label>
                     <label>
                     Your message:
-                    <textarea name="message"class="input" id="email" placeholder="Your message here..." required></textarea>
+                    <textarea name="message"class="input" id="emailMessage" placeholder="Your message here..." required></textarea>
                     </label>
                     
                   
                     <button class="submit-button" type="submit" >Send Message!</button>
+
+                    
                 </form>
             </section>
             
@@ -124,6 +161,9 @@
         </footer>
         
         <script src="index.js"></script>
+        <!-- script for form submission-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
         <!-- The two scripts below import the icons we use in our footer -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
