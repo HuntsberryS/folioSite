@@ -264,16 +264,16 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-
     width: 800px;
     color: black;
+}
+.logo {
+    width: 90px;
 }
 .social-links p {
     display: inline;
     font-size: 16px;
-}
-.social-links ion-icon {
-    padding-right: 10px;
+    padding: 10px;
 }
 .social-link {
     display: flex;
