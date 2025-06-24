@@ -136,15 +136,7 @@ ul {
   background-color: #f5f5f5;
 }
 
-.skill-card.language {
-  background-color: var(--color-accent);
-}
-
-.skill-card.tools {
-  background-color: var(--color-accent);
-}
-
-.skill-card.design {
+.skill-card {
   background-color: var(--color-accent);
 }
 
@@ -296,6 +288,26 @@ ul {
 }
 /* Project image */
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr));
+  gap: 4rem;
+}
+.project-card {
+  border: solid 0.125rem var(--color-main);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+
+}
+.project-card:hover{
+  transform: scale(1.25);
+}
+.projects-container {
+  padding: 2rem;
+  font-family: var(--font-main);
+  margin: 0 auto;
+  width: 80%;
+}
 .project-image {
     width: 25rem;
 }
