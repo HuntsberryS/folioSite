@@ -103,9 +103,12 @@ ul {
     background-color: hsla(16, 64%, 80%, 0.2);
 }
 
-/* Info Section */#skills {
+/* Info Section */
+#skills {
   padding: 2rem;
   font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .section-title {
@@ -283,4 +286,9 @@ ul {
     text-align: right;
     padding: 10px;
     font-size: 0.75rem;
+}
+/* Project image */
+
+.project-image {
+    width: 400px;
 }
