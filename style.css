@@ -297,24 +297,28 @@ ul {
   border: solid 0.125rem var(--color-main);
   padding: 1rem;
   border-radius: var(--border-radius);
-
+  text-align: center;
 }
+
 .project-card:hover{
-  transform: scale(1.25);
+  transform: scale(1.05);
 }
 .projects-container {
   padding: 2rem;
   font-family: var(--font-main);
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
-.project-image {
-    width: 25rem;
+.project-screenshot {
+  width: 400px;
 }
-
 
 /* responsive screens */
 @media (max-width: 768px) {
+    body{
+      margin: 10px;
+    }
+    }
     .navbar{
         font-size: 0.75rem;
     }
